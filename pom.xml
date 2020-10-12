@@ -6,12 +6,12 @@
 
 
     <groupId>com.kareem.selenium</groupId>
-    <artifactId>randomUser-test</artifactId>
+    <artifactId>automation-testing-practice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>RandomUser Test</name>
-    <description>test randomUser website for test tools revision purposes</description>
+    <name>automation testing practice</name>
+    <description>test automationpractice.com website for test tools revision purposes</description>
 
     <licenses>
         <license>
