@@ -1,10 +1,12 @@
 RandomUser-Test
 =======================
+### some tests for "randomuser.me" for testing tools revision purposes.
 
+## Quick Start:
 1. Open a terminal window/command prompt
 2. Clone this project.
 3. `cd RandomUser-Test` (Or whatever folder you cloned it into)
-4. `mvn clean verify`
+4. mvn clean verify -Dheadless=false -Dbrowser=chrome (default is headless firefox)
 
 All dependencies should now be downloaded and the example google cheese test will have run successfully in headless mode (Assuming you have Firefox installed in the default location)
 

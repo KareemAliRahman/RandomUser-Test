@@ -23,7 +23,7 @@ public class CodilityIT extends DriverBase {
         //return driver -> driver.getTitle().toLowerCase().startsWith(searchString.toLowerCase());
     //}
 
-   @Test
+   @Test(enabled=false)
    public void testLoginFormPresent() throws Exception{
      WebDriver webDriver = getDriver();
      List<WebElement> email = webDriver.findElements(By.id("email-input"));
@@ -44,7 +44,7 @@ public class CodilityIT extends DriverBase {
      button.click();
    }
 
-   @Test
+   @Test(enabled=false)
    public void testValidCredentialsWork() throws Exception{
      WebDriver webDriver = getDriver();
      //WebwebDriverWait
@@ -58,7 +58,7 @@ public class CodilityIT extends DriverBase {
      Assert.assertTrue(msg.getText()=="Welcome to Codility");
    }
 
-   @Test
+   @Test(enabled=false)
    public void testInvalidCredentialsDoesntWork() throws Exception{
      WebDriver webDriver = getDriver();
      //WebwebDriverWait
@@ -71,7 +71,7 @@ public class CodilityIT extends DriverBase {
      Assert.assertEquals(msg.getText(), "You shall not pass! Arr!");
    }
 
-   @Test
+   @Test(enabled=false)
    public void testInvalidEmailFormDoesntWork() throws Exception{
      WebDriver webDriver = getDriver();
      //WebwebDriverWait
@@ -84,7 +84,7 @@ public class CodilityIT extends DriverBase {
      Assert.assertEquals(msg.getText(), "Enter a valid email");
    }
 
-   @Test
+   @Test(enabled=false)
    public void testEmptyCredentialsDoesntWork() throws Exception{
      WebDriver webDriver = getDriver();
      //WebwebDriverWait
