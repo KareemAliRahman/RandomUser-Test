@@ -1,4 +1,4 @@
-Selenium-Maven-Template
+RandomUser-Test
 =======================
 
 1. Open a terminal window/command prompt
