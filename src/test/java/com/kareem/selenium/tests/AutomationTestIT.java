@@ -45,14 +45,6 @@ public class AutomationTestIT  extends DriverBase {
    }
 
    @Test
-   public void testValidCredentialsWork() throws Exception{
-     WebDriverWait wait = new WebDriverWait(webDriver, 3, 100);
-     loginPage.enterLoginCredentials(validEmail, validPassword);
-     loginPage.clickLogin();
-     Assert.assertEquals(webDriver.getTitle().toLowerCase(), "my account - my store", "should show account page");
-   }
-
-   @Test
    public void testInvalidCredentialsDoesntWork() throws Exception{
      WebDriverWait wait = new WebDriverWait(webDriver, 3);
      String invalidEmail = "unknown@codility.com";
@@ -72,5 +64,13 @@ public class AutomationTestIT  extends DriverBase {
      loginPage.clickLogin();
      wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert.alert-danger")));
      Assert.assertEquals(loginPage.errorElementContents(), "An email address required.");
+   }
+
+   @Test
+   public void testValidCredentialsWork() throws Exception{
+     WebDriverWait wait = new WebDriverWait(webDriver, 3, 100);
+     loginPage.enterLoginCredentials(validEmail, validPassword);
+     loginPage.clickLogin();
+     Assert.assertEquals(webDriver.getTitle().toLowerCase(), "my account - my store", "should show account page");
    }
 }
