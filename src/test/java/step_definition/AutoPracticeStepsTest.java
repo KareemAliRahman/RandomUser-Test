@@ -1,4 +1,4 @@
-package com.kareem.selenium.step_definition;
+package step_definition;
 
 import com.kareem.selenium.DriverBase;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ import org.testng.Assert;
 import com.kareem.selenium.page_objects.AutoPracticeLoginPage;
 import cucumber.api.java.en.*;
 
-public class AutoPracticeSteps extends DriverBase {
+public class AutoPracticeStepsTest extends DriverBase {
    public String url = "http://automationpractice.com/index.php?controller=authentication";
    private WebDriver webDriver;
    private AutoPracticeLoginPage loginPage;
