@@ -22,9 +22,9 @@ public class RandomUserIT extends DriverBase {
     public void randomUserTwitterLink() throws Exception {
         
 
-        driver.get("https://randomuser.me/");
+        //webdriver.get("https://randomuser.me/");
 
-        WebElement img = driver.findElement(By.xpath("//div[contains(@class, 'card')]//img"));
+        //WebElement img = driver.findElement(By.xpath("//div[contains(@class, 'card')]//img"));
         //Assert.assertNotEquals(, 0, "image is not present");
         //Assert.assertTrue(img.isDisplayed());
 
@@ -33,10 +33,10 @@ public class RandomUserIT extends DriverBase {
         //List<WebElement> imgs1 = driver.findElements(By.xpath("//div[contains(@class, 'card')]//img"));
         //Assert.assertTrue(imgs1.get(0).isDisplayed());
 
-        WebElement link = driver.findElement(By.className("twitter"));
-        String linkText = link.getAttribute("href");
-        Assert.assertEquals(linkText, "https://twitter.com/randomapi", "href link is not what is expected");
-        Assert.assertTrue(link.isDisplayed());
+        //WebElement link = driver.findElement(By.className("twitter"));
+        //String linkText = link.getAttribute("href");
+        //Assert.assertEquals(linkText, "https://twitter.com/randomapi", "href link is not what is expected");
+        //Assert.assertTrue(link.isDisplayed());
     }
 
 }
